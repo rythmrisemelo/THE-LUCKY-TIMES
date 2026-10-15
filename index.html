@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucky Times | Official Newspaper</title>
+<style>
+:root {
+  --bg: #0b1714;
+  --panel: #142720;
+  --green: #8ed5a9;
+  --cream: #f3efdf;
+  --muted: #a9b9af;
+  --line: #365044;
+  --gold: #e7c779;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+header {
+  text-align: center;
+  padding: 28px 16px 18px;
+  border-bottom: 3px double var(--green);
+  background: linear-gradient(145deg, #173b2e, #0b1714);
+}
+.kicker {
+  color: var(--gold);
+  font: 700 11px Arial, sans-serif;
+  letter-spacing: 3px;
+}
+h1 {
+  font-size: clamp(38px, 10vw, 68px);
+  line-height: 1;
+  margin: 12px 0;
+  color: var(--cream);
+}
+.subtitle { color: var(--muted); font-size: 14px; }
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 12px;
+  background: #10231b;
+  border-bottom: 1px solid var(--line);
+  font: 12px Arial, sans-serif;
+}
+nav a { color: var(--green); text-decoration: none; }
+main { max-width: 900px; margin: auto; padding: 20px 15px; }
+.datebar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font: 11px Arial, sans-serif;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+.hero {
+  margin: 22px 0;
+  padding: 25px 20px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  background: linear-gradient(135deg, #1c3d2e, #142720);
+}
+.tag {
+  color: var(--gold);
+  font: bold 10px Arial, sans-serif;
+  letter-spacing: 2px;
+}
+h2 { font-size: clamp(25px, 6vw, 40px); line-height: 1.15; margin: 12px 0; }
+h3 { margin: 8px 0; line-height: 1.3; }
+p { color: #d0d9d0; }
+.button {
+  display: inline-block;
+  padding: 9px 14px;
+  margin-top: 8px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
+  font: 12px Arial, sans-serif;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 14px;
+  color: var(--green);
+  font: bold 12px Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.section-title:after { content: ""; height: 1px; flex: 1; background: var(--line); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 17px;
+}
+.card small { color: var(--gold); font: 10px Arial, sans-serif; letter-spacing: 1px; }
+.card p { font-size: 14px; }
+.reporter {
+  border: 1px dashed #587562;
+  background: #101f19;
+  text-align: center;
+  padding: 18px;
+  margin-top: 20px;
+}
+.reporter .villager { font-size: 48px; }
+.reporter p { margin: 5px 0; font-size: 13px; }
+footer {
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding: 24px 15px;
+  color: var(--muted);
+  font: 11px Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">THE OFFICIAL LUCKY DIAMONDS NEWSPAPER</div>
+  <h1>LUCKY TIMES</h1>
+  <div class="subtitle">Truth. Teamwork. Treasure.</div>
+</header>
+<nav>
+  <a href="#home">FRONT PAGE</a>
+  <a href="#latest">LATEST NEWS</a>
+  <a href="#events">EVENTS</a>
+  <a href="#archive">ARCHIVE</a>
+</nav>
+<main id="home">
+  <div class="datebar">
+    <span>EDITION NO. 004</span>
+    <span>15 OCTOBER 2026</span>
+    <span>LUCKY DIAMONDS</span>
+  </div>
+
+  <section class="hero">
+    <div class="tag">THE BIG STORY</div>
+    <h2>THE EVENT IS HERE.</h2>
+    <p>Two teams. One battlefield. A masterpiece awaits.</p>
+    <p><strong>Team Masterpiece vs Team Perfection</strong> — the next chapter in Lucky Diamonds history begins here.</p>
+    <a class="button" href="#events">EXPLORE THE EVENT ↓</a>
+  </section>
+
+  <div class="section-title" id="latest">LATEST DISPATCHES</div>
+  <section class="grid">
+    <article class="card">
+      <small>GROUP NEWS</small>
+      <h3>A NEW ERA FOR LUCKY TIMES</h3>
+      <p>Our newspaper is moving online, creating a permanent home for announcements, reports and future editions.</p>
+    </article>
+    <article class="card">
+      <small>EVENT REPORT</small>
+      <h3>THE BIG REVEAL</h3>
+      <p>Block of Diamond sponsored the event announcement. Block of Emerald serves as event manager and rules coordinator.</p>
+    </article>
+    <article class="card">
+      <small>COMMUNITY</small>
+      <h3>THE DIAMOND STANDARD</h3>
+      <p>Preparation, fair play and teamwork remain at the heart of every Lucky Diamonds event.</p>
+    </article>
+  </section>
+
+  <div class="section-title" id="events">EVENT BOARD</div>
+  <section class="card">
+    <small>FEATURED MATCH</small>
+    <h2>TEAM MASTERPIECE <span style="color:var(--gold)">VS</span> TEAM PERFECTION</h2>
+    <p>Event sponsor: Block of Diamond</p>
+    <p>Event manager and rules: Block of Emerald</p>
+    <p>Check the group's official announcements for the confirmed match time and final arrangements.</p>
+  </section>
+
+  <div class="section-title" id="archive">FROM THE ARCHIVES</div>
+  <section class="grid">
+    <article class="card">
+      <small>EDITION 003</small>
+      <h3>THE EVENT ANNOUNCEMENT</h3>
+      <p>The teams, sponsorship and rules take centre stage.</p>
+    </article>
+    <article class="card">
+      <small>EDITION 002</small>
+      <h3>THE TEASER</h3>
+      <p>A first hint of a team-versus-team showdown.</p>
+    </article>
+  </section>
+
+  <section class="reporter">
+    <div class="villager">🎙️ 🟩</div>
+    <h3>YOUR REPORTER FROM THE OVERWORLD</h3>
+    <p>“Stay sharp, stay fair, and stay tuned!”</p>
+    <p>Official voice of Lucky Times</p>
+  </section>
+</main>
+<footer>
+  <strong>LUCKY TIMES</strong><br>
+  An independent community newspaper by Lucky Diamonds.<br>
+  Built for the Overworld. Published for the team.
+</footer>
+</body>
+  </html>
+  
